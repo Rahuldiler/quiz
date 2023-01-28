@@ -2,7 +2,7 @@ import React from "react";
 import Login from "./component/Login";
 
 const App = () => {
-  // add
+  // add 
   return <div><Login /></div>;
 };
 
