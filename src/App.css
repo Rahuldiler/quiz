@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+body {
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn:focus,
+button:focus {
+  outline: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loader__main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.loader__main>div {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border-top: 3px solid #000;
+  animation: rotateLoader 1s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
+@keyframes rotateLoader {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+
+  100% {
     transform: rotate(360deg);
   }
+}
+
+
+.home__main {
+  width: 100vw;
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.startQuizBtn {
+  display: block !important;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+label>input {
+  margin-right: 5px;
+}
+
+.nextPrevBtn{
+  border: none;
+  padding: 7px 30px;
+  border-radius: 7px;
+  background-color: lightgreen;
+  color: #000;
+  margin-top: 30px;
 }

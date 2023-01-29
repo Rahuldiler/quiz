@@ -1,0 +1,8 @@
+.navbar{
+    color: #fff;
+    padding: 1rem 2rem;
+}
+.navbar-nav .desktop_links{
+    display: flex;
+    justify-content:space-between ;
+}
